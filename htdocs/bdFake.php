@@ -7,7 +7,7 @@ use RedBeanPHP\R  as RedBean;
 
 $faker = Faker::create();
 
-RedBean::setup('mysql:host=mysql;dbname=guestBook', 'root', 'root');
+RedBean::setup('mysql:host=mysql;dbname=testdrive', 'root', 'root');
 
 for ($i = 0; $i < 200; $i++) {
   $preUsername = $faker->userName;

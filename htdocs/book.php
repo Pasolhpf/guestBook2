@@ -45,7 +45,7 @@
         </thead>
         <tbody>
           <?php
-          $dsn = 'mysql:host=mysql;dbname=guestBook;charset=utf8';
+          $dsn = 'mysql:host=mysql;dbname=testdrive;charset=utf8';
           $pdo = new PDO($dsn, 'root', 'root');
 
 
