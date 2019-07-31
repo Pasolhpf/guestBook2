@@ -1,0 +1,11 @@
+#tableBook {
+  table-layout: fixed;
+  word-wrap: break-word;
+	overflow-wrap: break-word;
+}
+
+#tableSearch {
+  table-layout: fixed;
+  word-wrap: break-word;
+	overflow-wrap: break-word;
+}

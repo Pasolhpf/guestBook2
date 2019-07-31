@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Гостевая книга</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1>Гостевая книга</h1><br>
+
+      <div id="errorMess"></div><br>
+      <form>
+        <input type="text" id="username" name="username" placeholder="Username (только цифры и буквы латинского алфавита)" class="form-control"><br>
+        <input type="email" id="email" name="email" placeholder="Email" class="form-control"><br>
+        <input type="url" id="homepage" name="homepage" placeholder="Homepage" class="form-control"><br>
+        <textarea name="message" id="message" placeholder="Message" cols="60" rows="7"></textarea><br><br>
+        <input type="text" id="tags" name="tags" placeholder="Введите ключевые слова через запятую без пробелов" class="form-control"><br>
+        <input type="date" id="createdAt" name="createdAt" placeholder="CreatedAt" class="form-control"><br>
+        <div class="container">
+          <div><img id="img-captcha" src="captcha.php"></div><br>
+  			  <div class="form-group has-feedback">
+              <label id="label-captcha" for="captcha" class="control-label">Пожалуйста, введите указанный на изображении код:</label>
+  	          <input id="captcha" name="captcha" type="text" class="form-control form-control-sm" style="width: 50%" required="required" value="">
+  	          <span class="glyphicon form-control-feedback"></span>
+          </div>
+        </div>
+        <form class="form-inline">
+          <button type="button" id="sendData" class="btn btn-success">Отправить</button>
+          <a class="btn btn-warning" href="http://172.55.0.3/book.php">К записям</a></span>
+          <a class="btn btn-danger" href="bdFake.php" role="button">+200 в БД</a>
+        </form>
+      </form>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/formAdd.js"></script>
+  </body>
+</html>
